@@ -6,7 +6,7 @@
 
 * I tried this repository in Ubuntu 16.04 within a conda environment (FYI: `repo/conda_environment.yml`).
 
-# For Anaconda Users
+# For Anaconda 3 Users
 
 ## The OpenCV Problems
 
@@ -14,11 +14,11 @@
 
 * Make sure to install OpenCV manually before installing Anaconda.
   * I had tried to build OpenCV when my system already has Anaconda 3 installed, and it never worked.
-  * This step is just a workaround. If you know better approach, welcome to drop me a message.
+  * This step is just a workaround. If you know better approaches, welcome to leave me a message.
 
 * After build and install OpenCV in your system, do the following things to install Anaconda and make it access to your system's OpenCV:
   * install Anaconda 3
-  * create a test environment by `conda create -n cv_test python=3.6` (or use `repo/conda_environment.yml`)
+  * create a test environment by `conda create -n <your_env_name> python=3.6` (or use `repo/conda_environment.yml`)
   * go to `~/.conda/envs/<your_env_name>/lib/python3.6/site-packages`
   * link the so file by
 
