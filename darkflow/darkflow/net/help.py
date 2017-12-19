@@ -90,7 +90,8 @@ def camera(self):
     if file == 'camera':
         file = 0
     else:
-        assert os.path.isfile(file), \
+        #assert os.path.isfile(file), \
+        assert os.path.exists(file), \
         'file {} does not exist'.format(file)
 
     camera = cv2.VideoCapture(file)

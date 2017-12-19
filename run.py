@@ -7,7 +7,7 @@ FLAGS = argHandler()
 FLAGS.setDefaults()
 
 #FLAGS.demo = "camera" # video file to use, or if camera just put "camera"
-FLAGS.demo = "../darkflow/repo/vid_test/test_vid_smash_window.avi" # video file to use, or if camera just put "camera"
+FLAGS.demo = os.path.expanduser("~/Desktop/EDR_rainy_street.mp4") # video file to use, or if camera just put "camera"
 FLAGS.model = "darkflow/cfg/yolo.cfg" # tensorflow model
 FLAGS.load = "darkflow/bin/yolo.weights" # tensorflow weights
 # FLAGS.pbLoad = "tiny-yolo-voc-traffic.pb" # tensorflow model
@@ -16,7 +16,7 @@ FLAGS.threshold = 0.3 # threshold of decetion confidance (detection if confidanc
 FLAGS.gpu = 0.5 #how much of the GPU to use (between 0 and 1) 0 means use cpu
 FLAGS.track = True #False # wheither to activate tracking or not
 #FLAGS.trackObj = ['Bicyclist','Pedestrian','Skateboarder','Cart','Car','Bus'] # the object to be tracked
-FLAGS.trackObj = ["person", "dog", "car"]
+FLAGS.trackObj = ["motorbike"] #["bicycle", "person", "dog", "car", "motorbike", "truck", "traffic light"]
 FLAGS.saveVideo = True  #whether to save the video or not
 # when set "FLAGS.BK_MOG = True", there might be errors (TODO)
 FLAGS.BK_MOG = False # activate background substraction using cv2 MOG substraction,
