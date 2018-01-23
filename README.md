@@ -17,7 +17,7 @@ In 2018 (at the posting time, it was 2018-01-23), just install OpenCV from `cond
 `conda install -c conda-forge opencv`
 
 ### NOTE: The following approach might be outdated...
-
+<s>
 * AFAIK, the OpenCV versions from `conda` or `pip` has no complete video functions, so you'll encounter problems when running the code which calls video reading or writing functions.
 
 * Make sure to install OpenCV manually before installing Anaconda.
@@ -33,6 +33,7 @@ In 2018 (at the posting time, it was 2018-01-23), just install OpenCV from `cond
     `ln -s /usr/local/lib/python3.5/dist-packages/cv2.cpython-35m-x86_64-linux-gnu.so cv2.so`
 
   * to check whether it works, you could go to `repo` and run `python check_vid_play.py <test_video_file>`.
+</s>
 
 # Usage (in your conda environment)
 * Download the repository, go to `darkflow` folder, then run `python3 setup.py build_ext --inplace`.
