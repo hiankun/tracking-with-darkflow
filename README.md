@@ -4,7 +4,7 @@
   * The original `README.md` has been moved to `README_orig.md`
   * Copy date: 2017/12/19
 
-* I tried this repository in Ubuntu 16.04 within a conda environment (FYI: `repo/conda_environment.yml`).
+* I tried this repository in Ubuntu 16.04 within a conda environment (FYI: `repo/conda_env.yml`).
 
 # For Anaconda 3 Users
 
