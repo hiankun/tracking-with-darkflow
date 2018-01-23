@@ -10,6 +10,14 @@
 
 ## The OpenCV Problems
 
+In 2017, the OpenCV installed by `conda` had problems with video reading/writing functions.
+
+In 2018 (at the posting time, it was 2018-01-23), just install OpenCV from `conda-forge` solves the problem:
+
+`conda install -c conda-forge opencv`
+
+### NOTE: The following approach might be outdated...
+
 * AFAIK, the OpenCV versions from `conda` or `pip` has no complete video functions, so you'll encounter problems when running the code which calls video reading or writing functions.
 
 * Make sure to install OpenCV manually before installing Anaconda.
